@@ -1,8 +1,9 @@
 package lyra2re
 
 import (
+	"golang.org/x/crypto/sha3"
+	
 	"github.com/aead/skein"
-	"github.com/bitgoin/lyra2rev2/sha3"
 	"github.com/dchest/blake256"
 	"github.com/deedlefake/crypto/groestl256"
 )
