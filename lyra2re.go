@@ -5,7 +5,7 @@ import (
 	
 	"github.com/pedroalbanese/skein"
 	"github.com/pedroalbanese/blake256"
-	"github.com/pedroalbanese/groestl"
+	"github.com/pedroalbanese/groestl-1"
 )
 
 func Sum(data []byte) ([]byte, error) {
