@@ -15,7 +15,7 @@ func Sum(data []byte) ([]byte, error) {
 	}
 	resultBlake := blake.Sum(nil)
 
-	keccak := sha3.NewKeccak256()
+	keccak := sha3.NewLegacyKeccak256()
 	if _, err := keccak.Write(resultBlake); err != nil {
 		return nil, err
 	}
