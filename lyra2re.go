@@ -3,9 +3,9 @@ package lyra2re
 import (
 	"golang.org/x/crypto/sha3"
 	
-	"github.com/aead/skein"
-	"github.com/dchest/blake256"
-	"github.com/deedlefake/crypto/groestl256"
+	"github.com/pedroalbanese/skein"
+	"github.com/pedroalbanese/blake256"
+	"github.com/pedroalbanese/groestl"
 )
 
 func Sum(data []byte) ([]byte, error) {
