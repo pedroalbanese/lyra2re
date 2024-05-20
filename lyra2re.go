@@ -27,7 +27,7 @@ func Sum(data []byte) ([]byte, error) {
 	var skeinResult [32]byte
 	skein.Sum256(&skeinResult, lyra2Result, nil)
 
-	groestlResult := groest.Sum(skeinResult[:])
+	groestlResult := groestl.Sum(skeinResult[:])
 
 	return groestlResult[:], nil
 }
